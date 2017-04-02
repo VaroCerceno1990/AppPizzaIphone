@@ -25,7 +25,7 @@ class ViewController: UIViewController{
     let sigVista = segue.destination as! TipoMasaController
     sigVista.tamanoPizza = resultado
     }
-   // @IBAction func unwindToMenu(_ segue: UIStoryboardSegue) {}
+   @IBAction func unwindToMenu(_ segue: UIStoryboardSegue) {}
 
 }
 

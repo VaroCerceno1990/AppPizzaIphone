@@ -32,7 +32,7 @@ class ConfirmacionController: UIViewController {
             let pedidoConfirm = UIAlertController(title: "Confirmación de orden", message: "El pedido se ha enviado a la cocina, muchas gracias por usar la aplicación", preferredStyle: UIAlertControllerStyle.alert)
             let okActionPedido = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
                 (result : UIAlertAction) -> Void in
-                 //self.performSegue(withIdentifier: "unwindToMenu", sender: self)
+                 self.performSegue(withIdentifier: "unwindToMenu", sender: self)
                 }
           pedidoConfirm.addAction(okActionPedido)
             self.present(pedidoConfirm, animated: true, completion: nil)
